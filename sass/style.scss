@@ -8,8 +8,8 @@ body{
 .bloc-calculator{
     height: 500px;
     margin-top: 30px;
-    border: 2px solid darken($color-grey, 30%);
-    background-color: $color-grey;
+    border: 2px solid $secondary-color;
+    background-color: lighten($secondary-color, 25%);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -24,8 +24,8 @@ body{
             margin-top: 20px;
             height: 110px;
             width: 90%;
-            border: 2px solid darken($color-grey, 30%);
-            background-color: $color-black;
+            border: 2px solid $secondary-color;
+            background-color: $color-white;
             border-radius: 10px;           
         }
     }
