@@ -1,3 +1,5 @@
+@import "utils/variables";
+
 body{
     margin: auto;
     width: 80%;
@@ -6,7 +8,8 @@ body{
 .bloc-calculator{
     height: 500px;
     margin-top: 30px;
-    border: 1px solid #000000;
+    border: 2px solid darken($color-grey, 30%);
+    background-color: $color-grey;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -21,18 +24,21 @@ body{
             margin-top: 20px;
             height: 110px;
             width: 90%;
-            border: 1px solid #000000;
+            border: 2px solid darken($color-grey, 30%);
+            background-color: $color-black;
             border-radius: 10px;           
         }
     }
     .bloc-sub{
         display: flex;
-        width: 100%;
+        height: 270px;
+        width: 90%;
         .bloc-numeric{
-            border: 1px solid #000000;
-            width: 80%;
+            width: 100%;
+            height: 270px;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             .bloc-sub-numeric{
                 display: flex;
                 flex-direction: row-reverse;
@@ -47,11 +53,28 @@ body{
 
         }
         .bloc-operation{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
             width: 20%;
         }
     }
     .btn{
-        border: 1px solid #000000;
+        border: 2px solid darken($tertiary-color, 30%);
+        background-color: $tertiary-color;
+        color: $color-white;
         width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        
     }
+    .btn.numb{
+        background-color: lighten($primary-color, 20%);
+        border: 2px solid $primary-color;
+        color: $color-white;
+        font-size: 1em;
+    }
+
 }
