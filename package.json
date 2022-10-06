@@ -1,0 +1,27 @@
+{
+  "name": "project-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./CSS/style.css",
+    "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxMacia/Project-Calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/MaxMacia/Project-Calculator/issues"
+  },
+  "homepage": "https://github.com/MaxMacia/Project-Calculator#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.55.0"
+  }
+}
