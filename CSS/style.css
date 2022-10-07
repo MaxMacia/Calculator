@@ -8,7 +8,6 @@ body {
   margin-top: 30px;
   border: 2px solid #000000;
   background-color: #000000;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,8 +20,12 @@ body {
   align-items: center;
 }
 .bloc-calculator .screen textarea {
+  padding-top: 10px;
+  padding-right: 10px;
+  text-align: right;
   height: 200px;
   width: 90%;
+  color: #ffffff;
   border: 2px solid #040487;
   background-color: #000000;
   border-radius: 10px;
@@ -70,6 +73,9 @@ body {
 }
 .bloc-calculator .btn:hover {
   background-color: rgba(44, 44, 248, 0.3);
+}
+.bloc-calculator .btn#clear {
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,6 @@ body{
     margin-top: 30px;
     border: 2px solid $color-black;
     background-color: $color-black;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,8 +20,12 @@ body{
         flex-direction: column;
         align-items: center;        
         textarea{
+            padding-top: 10px;
+            padding-right: 10px;
+            text-align: right;
             height: 200px;
             width: 90%;
+            color: $color-white;
             border: 2px solid darken($color-blue, 30%);
             background-color: $color-black;
             border-radius: 10px;           
@@ -72,6 +75,8 @@ body{
         &:hover{
             background-color: rgba(44, 44, 248, 0.3);
         }
-        
+    }
+    .btn#clear{
+        font-size: 0.9em;
     }
 }
