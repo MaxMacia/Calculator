@@ -14,7 +14,11 @@ let num8 = document.getElementById('8');
 let num9 = document.getElementById('9');
 
 let symplus = document.getElementById('+');
-console.log(symplus)
+let symminus = document.getElementById('-');
+let symmult = document.getElementById('*');
+let symdivide = document.getElementById('/');
+let symeq = document.getElementById('=');
+
 
 function clearFunc(){
     screen.innerHTML = '';
@@ -27,6 +31,9 @@ function onClick(event){
     }
     
     console.log(event.target.value);
+}
+function equal(){
+
 }
 
 clear.addEventListener('click', clearFunc)
@@ -41,3 +48,7 @@ num7.addEventListener('click', onClick);
 num8.addEventListener('click', onClick);
 num9.addEventListener('click', onClick);
 symplus.addEventListener('click', onClick);
+symminus.addEventListener('click', onClick);
+symmult.addEventListener('click', onClick);
+symdivide.addEventListener('click', onClick);
+symeq.addEventListener('click', equal)

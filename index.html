@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="CSS/style.css" rel="stylesheet">
+	<link href="CSS/prefixed/style.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/9ecb79e582.js" crossorigin="anonymous"></script>
 	<title>Calculator</title>
 </head>
@@ -35,11 +35,11 @@
 				</div>
 			</div>
 			<div class="bloc-operation">
-				<button class="btn"><i class="fa-solid fa-equals"></i></button>
+				<button id="=" class="btn" value="="><i class="fa-solid fa-equals"></i></button>
 				<button  id="+" class="btn" value="+"><i class="fa-solid fa-plus"></i></button>
-				<button class="btn"><i class="fa-solid fa-minus"></i></button>
-				<button class="btn"><i class="fa-solid fa-xmark"></i></button>
-				<button class="btn"><i class="fa-solid fa-divide"></i></button>
+				<button id="-" class="btn" value="-"><i class="fa-solid fa-minus"></i></button>
+				<button id="*" class="btn" value="*"><i class="fa-solid fa-xmark"></i></button>
+				<button id="/" class="btn" value="/"><i class="fa-solid fa-divide"></i></button>
 			</div>
 		</div>
 	</div>

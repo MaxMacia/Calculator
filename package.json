@@ -23,5 +23,9 @@
     "postcss": "^8.4.17",
     "postcss-cli": "^10.0.0",
     "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
