@@ -6,7 +6,8 @@
   "scripts": {
     "sass": "sass --watch ./sass/style.scss:./CSS/style.css",
     "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed",
-    "build": "webpack"
+    "build": "webpack",
+    "css-minify": "css-minify -f ./CSS/prefixed/style.css -o ./CSS/prefixed/min"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/MaxMacia/Project-Calculator#readme",
   "dependencies": {
     "autoprefixer": "^10.4.12",
+    "css-minify": "^2.0.0",
     "postcss": "^8.4.17",
     "postcss-cli": "^10.0.0",
     "sass": "^1.55.0",
