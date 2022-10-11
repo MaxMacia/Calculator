@@ -31,9 +31,14 @@ function onClick(event){
     }
     
     console.log(event.target.value);
+    console.log(screen.innerHTML);
 }
 function equal(){
-
+    var numberString = screen.innerHTML;
+    var result = eval(numberString);
+    console.log(numberString);
+    console.log(result);
+    screen.innerHTML = screen.innerHTML + '\r\n' + String(result);
 }
 
 clear.addEventListener('click', clearFunc)
