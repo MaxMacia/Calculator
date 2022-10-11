@@ -13,11 +13,11 @@ let num7 = document.getElementById('7');
 let num8 = document.getElementById('8');
 let num9 = document.getElementById('9');
 
-let symplus = document.getElementById('+');
-let symminus = document.getElementById('-');
-let symmult = document.getElementById('*');
-let symdivide = document.getElementById('/');
-let symeq = document.getElementById('=');
+let symplus = document.querySelector('button#plus.btn');
+let symminus = document.querySelector('button#minus.btn');
+let symmult = document.querySelector('button#multiply.btn');
+let symdivide = document.querySelector('button#divide.btn');
+let symeq = document.querySelector('button#equal.btn');
 
 
 function clearFunc(){
@@ -25,9 +25,9 @@ function clearFunc(){
 }
 function onClick(event){
     if(screen.innerHTML==''){
-        screen.innerHTML = event.target.value;
+        screen.innerHTML = event.currentTarget.value;
     } else{
-        screen.innerHTML = screen.innerHTML + event.target.value;
+        screen.innerHTML = screen.innerHTML + event.currentTarget.value;
     }
     
     console.log(event.target.value);
