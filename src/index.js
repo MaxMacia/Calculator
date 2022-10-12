@@ -29,10 +29,10 @@ function onClick(event){
     } else{
         screen.innerHTML = screen.innerHTML + event.currentTarget.value;
     }
-    
-    console.log(event.target.value);
     console.log(screen.innerHTML);
+    temporaryRes();
 }
+
 function equal(){
     var numberString = screen.innerHTML;
     var result = eval(numberString);
