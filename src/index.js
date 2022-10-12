@@ -1,4 +1,8 @@
-let screen = document.getElementById('screen');
+import {clearFunc} from './clear-func.js';
+import {onClick} from './on-click.js';
+import {equal} from './equal.js';
+
+export let screen = document.getElementById('screen');
 
 let clear = document.getElementById('clear');
 
@@ -19,28 +23,8 @@ let symmult = document.querySelector('button#multiply.btn');
 let symdivide = document.querySelector('button#divide.btn');
 let symeq = document.querySelector('button#equal.btn');
 
-
-function clearFunc(){
-    screen.innerHTML = '';
-}
-function onClick(event){
-    if(screen.innerHTML==''){
-        screen.innerHTML = event.currentTarget.value;
-    } else{
-        screen.innerHTML = screen.innerHTML + event.currentTarget.value;
-    }
-    console.log(screen.innerHTML);
-}
-
-function equal(){
-    var numberString = screen.innerHTML;
-    var result = eval(numberString);
-    console.log(numberString);
-    console.log(result);
-    screen.innerHTML = screen.innerHTML + '\r\n' + String(result);
-}
-
 clear.addEventListener('click', clearFunc)
+
 num0.addEventListener('click', onClick);
 num1.addEventListener('click', onClick);
 num2.addEventListener('click', onClick);
@@ -51,6 +35,7 @@ num6.addEventListener('click', onClick);
 num7.addEventListener('click', onClick);
 num8.addEventListener('click', onClick);
 num9.addEventListener('click', onClick);
+
 symplus.addEventListener('click', onClick);
 symminus.addEventListener('click', onClick);
 symmult.addEventListener('click', onClick);
