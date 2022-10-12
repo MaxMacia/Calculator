@@ -30,7 +30,6 @@ function onClick(event){
         screen.innerHTML = screen.innerHTML + event.currentTarget.value;
     }
     console.log(screen.innerHTML);
-    temporaryRes();
 }
 
 function equal(){

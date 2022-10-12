@@ -20,6 +20,8 @@ body {
   align-items: center;
 }
 .bloc-calculator .screen textarea {
+  box-shadow: none;
+  resize: none;
   padding-top: 10px;
   padding-right: 10px;
   text-align: right;
