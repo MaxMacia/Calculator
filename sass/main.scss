@@ -1,8 +1,12 @@
 @import "utils/variables";
+@import "utils/mixins";
 
 body{
     margin: auto;
     width: 80%;
+    @include desktop{
+        width: 30%;
+    }
 }
 
 .bloc-calculator{
@@ -48,11 +52,17 @@ body{
                 flex-direction: row-reverse;
                 justify-content: space-around;
                 width: 100%;
+                @include desktop{
+                    width: 90%;
+                }
             }
             .bloc-0{
                 display: flex;
                 width: 100%;
                 justify-content: space-around;
+                @include desktop{
+                    width: 90%;
+                }
             }
 
         }
@@ -61,6 +71,9 @@ body{
             flex-direction: column-reverse;
             justify-content: flex-end;
             width: 20%;
+            @include desktop{
+                width: 30%;
+            }
         }
     }
     .btn{

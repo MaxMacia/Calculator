@@ -2,6 +2,11 @@ body {
   margin: auto;
   width: 80%;
 }
+@media screen and (min-width: 768px) {
+  body {
+    width: 30%;
+  }
+}
 
 .bloc-calculator {
   height: 500px;
@@ -50,16 +55,31 @@ body {
   justify-content: space-around;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .bloc-calculator .bloc-sub .bloc-numeric .bloc-sub-numeric {
+    width: 90%;
+  }
+}
 .bloc-calculator .bloc-sub .bloc-numeric .bloc-0 {
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .bloc-calculator .bloc-sub .bloc-numeric .bloc-0 {
+    width: 90%;
+  }
 }
 .bloc-calculator .bloc-sub .bloc-operation {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
   width: 20%;
+}
+@media screen and (min-width: 768px) {
+  .bloc-calculator .bloc-sub .bloc-operation {
+    width: 30%;
+  }
 }
 .bloc-calculator .btn {
   border: 2px solid #040487;
