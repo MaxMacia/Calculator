@@ -7,7 +7,8 @@
     "sass": "sass --watch ./sass/style.scss:./CSS/style.css",
     "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed",
     "build": "webpack",
-    "css-minify": "css-minify -f ./CSS/prefixed/style.css -o ./CSS/prefixed/min"
+    "css-minify": "css-minify -f ./CSS/prefixed/style.css -o ./CSS/prefixed/min",
+    "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
